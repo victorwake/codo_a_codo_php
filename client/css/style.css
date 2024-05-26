@@ -1,0 +1,21 @@
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#signUpForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}

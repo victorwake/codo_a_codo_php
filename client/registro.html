@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/><link>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        #signUp {
+            display: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"></a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a id="loginId" href="" style="--i: 6;">Iniciar Sesión</a>
+            <a id="backId" href="../index.html" style="--i: 7;">Volver</a>
+            <i class='bx bxs-flag-alt' id="flag"></i>
+        </nav>
+    </header>
+    <section id="login">
+    <form id="loginForm"">
+
+        <h2>Iniciar Sesión</h2>
+
+        <div class="contenedor-input">
+            <input type="email" id="email" placeholder="Correo electrónico">
+            <input type="password" id="password" placeholder="Contraseña">
+        </div>
+
+        <div>
+            <a href="#" class="forgot-password">¿Olvidaste la contraseña?</a>
+        <div id="extwaiokist" style="display:none" v="knoib" q="5bfb84c9" c="662.9" i="670" u="0.463" s="05202423" sg="svr_09102316-ga_05202423-bai_05072421" d="1" w="false" e="" a="2" m="BMe=" vn="9pipm"><div id="extwaigglbit" style="display:none" v="knoib" q="5bfb84c9" c="662.9" i="670" u="0.463" s="05202423" sg="svr_09102316-ga_05202423-bai_05072421" d="1" w="false" e="" a="2" m="BMe="></div></div></div>
+
+        <div>
+            <button type="submit" class="btn-iniciar-sesion">Iniciar Sesión</button>
+        </div>
+
+        <p class="register-message">Si aún no tienes una cuenta, <a id="signUpId" href="#">regístrate.</a></p>
+
+    </form>
+</section>
+<section id="signUp">
+    <form id="signUpForm">
+        <h2 class="tituloRegistrar">Registro</h2>
+        <div class="contenedor-input">
+            <input type="text" placeholder="Nombre" required="">
+            
+        </div>
+
+        <div class="contenedor-input">
+            <input type="text" placeholder="Apellido" required="">
+            
+        </div>
+
+        <div class="contenedor-input">
+            <input type="email" placeholder="Email" required="">
+            
+        </div>
+
+        <div class="contenedor-input">
+            <input type="password" placeholder="Contraseña" required="">
+            
+        <div id="extwaiokist" style="display:none" v="knoib" q="5bfb84c9" c="662.9" i="670" u="0.484" s="05202423" sg="svr_09102316-ga_05202423-bai_05072421" d="1" w="false" e="" a="2" m="BMe=" vn="9pipm"><div id="extwaigglbit" style="display:none" v="knoib" q="5bfb84c9" c="662.9" i="670" u="0.484" s="05202423" sg="svr_09102316-ga_05202423-bai_05072421" d="1" w="false" e="" a="2" m="BMe="></div></div></div>
+
+        <div class="contenedor-input">
+            <input type="date" placeholder="Fecha de Nacimiento" required="">
+        </div>
+
+        <div class="contenedor-input">
+            <select id="countrySelect"></select>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" id="checkbox" required="">
+
+            <label for="checkbox">Acepto los terminos y condiciones</label>
+        </div>
+
+        <div class="contenedor-input">
+            <button class="btnForm" valu="Registrarse">Registrarse</button>
+        </div>
+    </form>
+</section>
+
+<script>
+    document.getElementById('loginId').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('login').style.display = 'block';
+        document.getElementById('signUp').style.display = 'none';
+    });
+
+    document.getElementById('signUpId').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('signUp').style.display = 'block';
+        document.getElementById('login').style.display = 'none';
+    });
+</script>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
